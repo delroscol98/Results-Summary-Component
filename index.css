@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap");
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+:root {
+  --gradient-1: linear-gradient(
+    0deg,
+    rgba(47, 44, 233, 1) 0%,
+    rgba(105, 67, 255, 1) 100%
+  );
+
+  --gradient-2: linear-gradient(
+    0deg,
+    rgba(37, 33, 201, 0) 0%,
+    rgba(77, 33, 201, 1) 100%
+  );
+  --yellow: #ffb21e;
+  --blue: #1125d6;
+  --green: #00bb8f;
+  --red: #ff5555;
+  --dark-navy: #303b59;
+  --light-blue: #cac9ff;
+  --very-light-blue: #ecf2ff;
+  --white: #fff;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+.result {
+  width: 100vw;
+  height: 35.6rem;
+  background: var(--gradient-1);
+  border-bottom-left-radius: 3.2rem;
+  border-bottom-right-radius: 3.2rem;
+}
+
+.result_title {
+  width: 9.4rem;
+  height: 2.3rem;
+  font-size: 1.8rem;
+  color: var(--light-blue);
+  position: relative;
+  left: 50%;
+  top: 2.4rem;
+  transform: translateX(-50%);
+  font-weight: bold;
+}
+
+.result_score {
+  background: var(--gradient-2);
+  width: 14rem;
+  height: 14rem;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 4.8rem;
+  border-radius: 50%;
+}
+
+.result_score-container {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 6.3rem;
+  height: 9.3rem;
+  text-align: center;
+}
+
+.result_score-main {
+  font-size: 5.6rem;
+  font-weight: bolder;
+  color: var(--white);
+}
+
+.result_score-total {
+  font-size: 1.6rem;
+  color: var(--light-blue);
+  font-weight: bold;
+}
+
+.result_feedback {
+  width: 26rem;
+  height: 8.1rem;
+  text-align: center;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 7.2rem;
+}
+
+.result_feedback-main {
+  color: var(--white);
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+
+.result_feedback-total {
+  color: var(--light-blue);
+  font-size: 1.6rem;
+  font-weight: 500;
+  position: relative;
+  top: 0.8rem;
+}
