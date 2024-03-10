@@ -44,6 +44,10 @@ html {
   background: var(--very-light-blue);
 }
 
+main {
+  background-color: var(--white);
+}
+
 .result {
   width: 100vw;
   height: 35.6rem;
@@ -132,14 +136,12 @@ html {
 
 .summary_data {
   height: 27.2rem;
-  border: 1px solid red;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.summary_data-reaction {
-  background-color: color-mix(in lch, var(--red) 5%, var(--white));
+.summary_data-article {
   border-radius: 1.2rem;
   height: 5.6rem;
   padding: 1.6rem;
@@ -148,27 +150,58 @@ html {
   justify-content: space-between;
 }
 
-.summary_data-reaction-title {
+.summary_data-article-title {
   display: flex;
   align-items: center;
 }
 
-.summary_data-reaction-title img {
+.summary_data-article-title img {
   margin-right: 1.2rem;
 }
 
-.summary_data-reaction-title p {
-  color: var(--red);
+.summary_data-article-title p {
   font-size: 1.6rem;
 }
 
-.summary_data-reaction-score {
+.summary_data-article-score {
   font-size: 1.6rem;
   color: var(--dark-navy);
 }
 
-.summary_data-reaction-score span {
+.summary_data-article-score span {
   opacity: 50%;
+}
+
+.reaction {
+  background-color: #fff6f6;
+}
+
+.memory {
+  background-color: #fffbf4;
+}
+
+.verbal {
+  background-color: #f2fcf9;
+}
+
+.visual {
+  background-color: #f3f4fd;
+}
+
+.reaction_title p {
+  color: var(--red);
+}
+
+.memory_title p {
+  color: var(--yellow);
+}
+
+.verbal_title p {
+  color: var(--green);
+}
+
+.visual_title p {
+  color: var(--blue);
 }
 
 @media screen and (min-width: 426px) {
