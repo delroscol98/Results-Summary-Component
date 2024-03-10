@@ -120,6 +120,57 @@ html {
   top: 0.8rem;
 }
 
+.summary {
+  margin: 2.4rem 3.2rem 3rem;
+}
+
+.summary_title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 2.4rem;
+}
+
+.summary_data {
+  height: 27.2rem;
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.summary_data-reaction {
+  background-color: color-mix(in lch, var(--red) 5%, var(--white));
+  border-radius: 1.2rem;
+  height: 5.6rem;
+  padding: 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.summary_data-reaction-title {
+  display: flex;
+  align-items: center;
+}
+
+.summary_data-reaction-title img {
+  margin-right: 1.2rem;
+}
+
+.summary_data-reaction-title p {
+  color: var(--red);
+  font-size: 1.6rem;
+}
+
+.summary_data-reaction-score {
+  font-size: 1.6rem;
+  color: var(--dark-navy);
+}
+
+.summary_data-reaction-score span {
+  opacity: 50%;
+}
+
 @media screen and (min-width: 426px) {
   main {
     width: 73.6rem;
