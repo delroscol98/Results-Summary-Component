@@ -41,7 +41,6 @@
 html {
   font-size: 62.5%;
   font-family: "Hanken Grotesk", sans-serif;
-  background: var(--very-light-blue);
 }
 
 main {
@@ -204,7 +203,29 @@ main {
   color: var(--blue);
 }
 
+button {
+  border: none;
+  background-color: var(--dark-navy);
+  color: var(--white);
+  width: 31.5rem;
+  height: 5.6rem;
+  margin-top: 2.4rem;
+  border-radius: 12.8rem;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button:active {
+  background: var(--gradient-1);
+}
+
 @media screen and (min-width: 426px) {
+  html {
+    background-color: var(--very-light-blue);
+  }
+
   main {
     width: 73.6rem;
     height: 51.2rem;
@@ -213,7 +234,7 @@ main {
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 3.2rem;
-    border: 1px solid red;
+    display: flex;
   }
 
   .result {
@@ -226,6 +247,7 @@ main {
     width: 12.5rem;
     height: 3.1rem;
     font-size: 2.4rem;
+    top: 3.8rem;
   }
 
   .result_score {
@@ -263,6 +285,34 @@ main {
   }
 
   .result_feedback-total {
+    font-size: 1.8rem;
+    margin-top: 1.4rem;
+  }
+
+  .summary {
+    margin: 4rem auto;
+  }
+
+  .summary_title {
+    font-size: 2.4rem;
+  }
+
+  .summary_data {
+    width: 28.8rem;
+    height: 27.2rem;
+  }
+
+  .summary_data-article-title p {
+    font-size: 1.8rem;
+  }
+
+  .summary_data-article-score {
+    font-size: 1.8rem;
+  }
+
+  button {
+    width: 28.8rem;
+    margin-top: 4.1rem;
     font-size: 1.8rem;
   }
 }
